@@ -2,6 +2,8 @@ FROM rocker/r-ver:3.2
 
 RUN R --quiet -e "install.packages('tidyverse')"
 
+RUN pip --version
+
 RUN apt-get update && \
     apt-get dist-upgrade
 
