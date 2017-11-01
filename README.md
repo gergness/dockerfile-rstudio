@@ -1,6 +1,8 @@
 # RStudio in Binder using a Dockerfile
 
-[![Binder](http://mybinder.org/badge.svg)](http://beta.mybinder.org/v2/gh/binder-examples/dockerfile-rstudio/master)
+[![Binder](http://mybinder.org/badge.svg)](http://beta.mybinder.org/v2/gh/gergness/dockerfile-rstudio/master)
+
+Forked, because I'm trying to get R 3.2 support
 
 This is a proof-of-concept to deploy a Binder that exposes the
 RStudio UI instead of a Jupyter Notebook. It also installs
