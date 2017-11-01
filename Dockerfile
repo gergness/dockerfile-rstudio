@@ -6,7 +6,7 @@ RUN apt-get update && \
     apt-get dist-upgrade && \
     apt-get -y install python3-pip
 
-RUN pip --version
+RUN pip3 --version
 
 RUN pip3 install --no-cache-dir \
          notebook==5.2 \
