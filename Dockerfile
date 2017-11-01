@@ -3,7 +3,7 @@ FROM rocker/r-ver:3.2
 RUN R --quiet -e "install.packages('tidyverse')"
 
 RUN apt-get update && \
-    apt-get dist-upgrade
+    apt-get dist-upgrade && \
     apt-get -y install python3-pip
 
 RUN pip --version
