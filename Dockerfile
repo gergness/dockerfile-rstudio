@@ -8,7 +8,7 @@ RUN pip3 --version
 RUN pip3 install pip --upgrade
 RUN pip3 --version
 
-RUN apt-get install git-all
+RUN apt-get -y install git-all
 
 RUN pip3 install --no-cache-dir \
          notebook==5.2 \
