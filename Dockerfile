@@ -1,7 +1,5 @@
 FROM rocker/r-ver:3.2
 
-RUN R --quiet -e "install.packages('tidyverse')"
-
 RUN apt-get update && \
     apt-get dist-upgrade && \
     apt-get -y install python3-pip
@@ -9,6 +7,8 @@ RUN apt-get update && \
 RUN pip3 --version
 RUN pip3 install pip --upgrade
 RUN pip3 --version
+
+RUN apt-get install git-all
 
 RUN pip3 install --no-cache-dir \
          notebook==5.2 \
